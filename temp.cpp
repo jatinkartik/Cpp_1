@@ -46,5 +46,7 @@ else
     o++;
 }
 printf("\n hello bro this file is printed by jatin kartik tyagi are you sure that person is so much talented realy");
+printf("jatin kartik tyagi is \n always great you know");
+
 return 0;
 }
