@@ -11,14 +11,14 @@ int main(){
     int g = k;
 for(int i = 1; i<=k; i++){
     for(int h = g; h>=1; h--){
-        cout<<"  ";
+        cout<<"   ";
     }
     for(int r =i;r>1;r--){
-        cout<<r<<" ";
+        cout<<r<<"  ";
 
     }
     for(int j =1; j<=i; j++){
-        cout<<j<<" ";
+        cout<<j<<"  ";
     }
     g--;
     cout<<endl;
