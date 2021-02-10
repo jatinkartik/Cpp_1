@@ -8,17 +8,17 @@ using namespace std;
 int main(){
      int hex;
     char arr[88];
+    int arrt[88];
     int i,j,sum=0;
     int remainder = 0;
     cout<<"Enter the hexadecimal  value:";
     gets(arr);
     int l = strlen(arr);
-    int k = l;
 cout<<endl<<endl<<endl<<l<<endl;
 
 
-    for( i = l ;i>=0; i--){
-    if(arr[i] == 65){
+    for( i = 0 ;i<l;i++){
+        if(arr[i] == 65){
         remainder = 10;
         }
         else
@@ -81,11 +81,15 @@ cout<<endl<<endl<<endl<<l<<endl;
         if(arr[i] == 57){
         remainder = 9;
         }
-        sum += remainder * pow(16,k -1);
-        k--;
+        arrt[i] = remainder;
     }
-    cout<<endl;
+    int k = 0;
+    for(j = i -1; j>=0; j--){
+        sum += arrt[j] * pow(16,k);
+        k++;
+    }
   cout<<"the sum is :"<<sum;
+    cout<<endl;
     
     
 return 0;
