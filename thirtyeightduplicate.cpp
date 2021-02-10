@@ -7,7 +7,7 @@ int main(){
     
     int x,y,z;
     cin>>x>>y>>z;
- printf(" the value of %d",pyth(x,y,z));
+//  printf(" the value of %d",pyth(x,y,z));
 return 0;
 }
 void pyth(int x, int y, int z){

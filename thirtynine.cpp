@@ -11,7 +11,7 @@ int main(){
     cout<<"Enter the decimal value :";
     cin>>dec;
     for( i = 0; dec > 0; i++){
-        remainder *= 10;
+        //remainder *= 10;
     remainder = dec%2;
     arr[i] = remainder;
     dec = dec/2;
@@ -21,8 +21,6 @@ int main(){
         cout<<arr[j];
     }
     
-   
-    
-    cout<<endl<<remainder<<endl;
+    // cout<<endl<<remainder<<endl;
 return 0;
 }
