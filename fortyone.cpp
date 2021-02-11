@@ -1,8 +1,8 @@
 // decimal to octal conversion
-#include<iostream>
+// #include<iostream>
 #include<bits/stdc++.h>
-#include<math.h>
-#include<string.h>
+// #include<math.h>
+// #include<string.h>
 using namespace std;
 
 int main(){

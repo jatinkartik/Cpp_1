@@ -16,5 +16,6 @@ int octaltodecimal(int n){
         y *= 8;
         n /= 10;
     }
+    
     return x;
 }
