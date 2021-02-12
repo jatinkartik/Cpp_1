@@ -17,7 +17,7 @@ int binarytodecimal(int n){
         int v = n%10;
         x += v*y;
         y *= 2;
-         n /= 10;
+        n /= 10;
     }
     return x;
 }
