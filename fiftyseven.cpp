@@ -1,6 +1,8 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<stdlib.h>
 using namespace std;
  class employee{
+    //  void get(int m,int n,char o );
      public: 
      string name;
      int code;
@@ -9,23 +11,34 @@ using namespace std;
      int areacode;
      char block;
 
-     void get(int m,int n,char o);
-
-     void display();
- };
-int main(){
-    int password,areacode;
-    
-cout<<endl;
-return 0;
-}
-     void employee::get(int m,int n,char o){
+    public:
+    //  void display();
+     void get(int m,int n,char o ){
          m = password;
          n = areacode;
          o = block;
      }
-     void employee::display(){
-         cout<<"the password of employee is "<<password;
-         cout<<"the area codeo of the employee is "<<areacode;
-         cout<<"the block in which employee work is "<<block;
+     void display(){
+         cout<<"the password of employee is "<<password<<endl;
+         cout<<"the area codeo of the employee is "<<areacode<<endl;
+         cout<<"the block in which employee work is "<<block<<endl;
      }
+ };
+int main(){
+    int password,areacode,code;
+    char o = 'j';
+    employee e1;
+
+    cout<<"Enter the the areacode of the employee: -  ";
+    cin>>areacode;
+    cout<<"Enter the code of the employee : -  ";
+    cin>>code;
+    cout<<"Enter the password of the employee : - ";
+    cin>>password;
+    e1.code = code;
+    e1.get(password,areacode,o);
+    e1.display();
+    
+cout<<endl;
+return 0;
+}
