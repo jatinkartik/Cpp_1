@@ -1,26 +1,28 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
-float division(int x, int y)
+class student
 {
-    if (y == 0)
+    int rollno;
+    string name;
+
+public:
+    student &sedata(int rollno, string name)
     {
-        throw "Attempted to divide by zero!";
+        this->rollno = rollno;
+        this->name = name;
+        return *this;
     }
-    return (x / y);
-}
+    void getdata()
+    {
+        cout << "rollno : -  " << rollno;
+        cout << endl
+             << "name : -  " << name;
+    }
+};
 int main()
 {
-    int i = 25;
-    int j = 0;
-    float k = 0;
-    try
-    {
-        k = division(i, j);
-        cout << k << endl;
-    }
-    catch (const char *e)
-    {
-        cerr << e << endl;
-    }
+    student ss;
+    ss.sedata(5005, "jatin_kartik").getdata();
+    cout << endl;
     return 0;
 }
