@@ -1,28 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
-class student
-{
-    int rollno;
-    string name;
 
-public:
-    student &sedata(int rollno, string name)
-    {
-        this->rollno = rollno;
-        this->name = name;
-        return *this;
-    }
-    void getdata()
-    {
-        cout << "rollno : -  " << rollno;
-        cout << endl
-             << "name : -  " << name;
-    }
-};
 int main()
 {
-    student ss;
-    ss.sedata(5005, "jatin_kartik").getdata();
-    cout << endl;
-    return 0;
+    string sam, sam1, sam2, sam3;
+    char c;
+    char *input;
+    sam = "flower";
+    sam1 = "flight";
+    sam2 = "flow";
+    sam3 = "flowchart";
+    cout << "common prefix is : -";
+    for (int j = 0; j < 4; j++)
+    {
+        c = sam[j];
+
+        if ((sam[j] == c) && (sam1[j] == c) && (sam2[j] == c) && (sam3[j] == c)){
+        cout << c;
+    }
+    else{
+        exit;
+    }
+    
+}
+
+cout << endl;
+return 0;
 }
