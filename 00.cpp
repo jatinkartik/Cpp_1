@@ -1,29 +1,30 @@
-#include <bits/stdc++.h>
+#include <iostream>
+
+#include <fstream>
+
 using namespace std;
 
 int main()
 {
-    string sam, sam1, sam2, sam3;
-    char c;
-    char *input;
-    sam = "flower";
-    sam1 = "flight";
-    sam2 = "flow";
-    sam3 = "flowchart";
-    cout << "common prefix is : -";
-    for (int j = 0; j < 4; j++)
-    {
-        c = sam[j];
 
-        if ((sam[j] == c) && (sam1[j] == c) && (sam2[j] == c) && (sam3[j] == c)){
-        cout << c;
-    }
-    else{
-        exit;
-    }
-    
-}
+   fstream my_file;
+   
 
-cout << endl;
-return 0;
+   if (!my_file)
+   {
+
+      cout << "File not created!";
+   }
+
+   else
+   {
+
+      cout << "File created successfully!";
+
+      my_file << "Guru99";
+
+      my_file.close();
+   }
+
+   return 0;
 }
