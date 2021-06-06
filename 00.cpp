@@ -1,30 +1,25 @@
-#include <iostream>
-
-#include <fstream>
-
+#include<bits/stdc++.h>
 using namespace std;
-
-int main()
-{
-
-   fstream my_file;
-   
-
-   if (!my_file)
-   {
-
-      cout << "File not created!";
+class base{
+   public: 
+   virtual string print(){
+      return "THis is base class";
    }
-
-   else
-   {
-
-      cout << "File created successfully!";
-
-      my_file << "Guru99";
-
-      my_file.close();
+};
+class derived : public base{
+   public:
+   virtual string print(){
+      return "this is derived class";
    }
-
-   return 0;
+};
+void describe (base b){
+   cout<<b.print()<<endl;
+};
+int main(){
+   base b;
+   derived d;
+   describe(b);
+   describe(d);
+cout<<endl;
+return 0;
 }
